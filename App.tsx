@@ -17,12 +17,8 @@ function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={LoginScreen}
-          options={{title: 'LoginScreen'}}
-        />
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={LoginScreen} />
         <Stack.Screen name="Profile" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
